@@ -38,7 +38,6 @@ header {
 /* Main */
 
 main {
-    height: 600px;
     padding: 0 10px;
 }
 
@@ -47,7 +46,9 @@ section {
 }
 
 /* Section header */
-
+.header {
+    position: relative;
+}
 .header-title {
     font-family: 'Prata', sans-serif;
     font-size: 24px;
@@ -66,7 +67,7 @@ section {
     align-items: center;
     column-gap: 10px;
 }
-.header-img {
+.header-svg {
     width: 20px;
     height: 20px;
 }
@@ -84,4 +85,13 @@ section {
     background-color: #fff;
     color: #222222;
     border-radius: 4px;
+}
+.header-img {
+    position: absolute;
+    top: 0;
+}
+.header-img > img{
+    width: 300px;
+    opacity: 0.1;
+    border-radius: 10px;
 }
