@@ -98,15 +98,15 @@ section {
 }
 .header-title {
     font-family: 'Prata', sans-serif;
-    font-size: 24px;
+    font-size: 25px;
 }
 .header-subtitle {
-    font-size: 18px;
+    font-size: 20px;
 }
 .header-list {
     display: grid;
     row-gap: 15px;
-    font-size: 16px;
+    font-size: 18px;
 }
 .header-item {
     display: flex;
@@ -114,8 +114,8 @@ section {
     column-gap: 10px;
 }
 .header-svg {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
 }
 .header-text {
 }
