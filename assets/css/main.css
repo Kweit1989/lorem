@@ -82,6 +82,7 @@ section {
     position: relative;
     overflow: hidden;
     height: calc(100vh - 69px);
+    transition: height 0.3s ease;
 }
 .header-content {
     height: 100%;
@@ -136,6 +137,7 @@ section {
     height: calc(100vh - 69px);
     position: absolute;
     top: 0;
+    transition: height 0.3s ease;
 }
 .header-img > img{
     width: 100%;
