@@ -138,6 +138,26 @@ section {
 /* Section body */
 
 .body {
-    height: 600px;
     background-color: #282829;
+}
+.body-list {
+    display: grid;
+    padding: 0 10px;
+    font-size: 12px;
+}
+.body-list > .body-item:not(:first-child) {
+    border-top: 1px solid #55565A;
+}
+.body-item {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 20px 0;
+}
+.body-svg {
+    width: 35px;
+    height: 35px;
+}
+.body-text {
+    line-height: 140%;
 }
