@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'ArialMT';
+    src: url('./Arial/Arial-RegularMT.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'ArialMT';
+    src: url('./Arial/Arial-ItalicMT.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'ArialMT';
+    src: url('./Arial/Arial-BoldMT.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Prata';
+    src: url('./Prata/Prata-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
