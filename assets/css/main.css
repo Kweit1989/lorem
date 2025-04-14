@@ -134,3 +134,10 @@ section {
     border-radius: 10px;
     transition: opacity 0.5s ease; 
 }
+
+/* Section body */
+
+.body {
+    height: 600px;
+    background-color: #282829;
+}
