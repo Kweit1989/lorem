@@ -106,7 +106,7 @@ section {
 .header-list {
     display: grid;
     row-gap: 15px;
-    font-size: 14px;
+    font-size: 16px;
 }
 .header-item {
     display: flex;
@@ -114,8 +114,8 @@ section {
     column-gap: 10px;
 }
 .header-svg {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
 }
 .header-text {
 }
@@ -152,7 +152,7 @@ section {
 .body-list {
     display: grid;
     padding: 0 10px;
-    font-size: 14px;
+    font-size: 16px;
 }
 .body-list > .body-item:not(:first-child) {
     border-top: 1px solid #55565A;
