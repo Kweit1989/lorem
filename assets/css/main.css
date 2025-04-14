@@ -57,7 +57,7 @@ section {
 .header-list {
     display: grid;
     row-gap: 15px;
-    font-size: 14px;
+    font-size: 12px;
 }
 .header-item {
     display: flex;
@@ -65,8 +65,8 @@ section {
     column-gap: 10px;
 }
 .header-img {
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
 }
 .header-text {
 }
