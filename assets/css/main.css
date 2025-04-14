@@ -83,9 +83,15 @@ section {
     overflow: hidden;
 }
 .header-content {
+    display: grid;
+    row-gap: 50px;
     position: relative;
     z-index: 1;
     padding: 0 10px;
+}
+.header-container{
+    display: grid;
+    row-gap: 10px;
 }
 .header-title {
     font-family: 'Prata', sans-serif;
@@ -97,8 +103,7 @@ section {
 .header-list {
     display: grid;
     row-gap: 15px;
-    font-size: 12px;
-    margin: 25px 0;
+    font-size: 14px;
 }
 .header-item {
     display: flex;
@@ -143,7 +148,7 @@ section {
 .body-list {
     display: grid;
     padding: 0 10px;
-    font-size: 12px;
+    font-size: 14px;
 }
 .body-list > .body-item:not(:first-child) {
     border-top: 1px solid #55565A;
