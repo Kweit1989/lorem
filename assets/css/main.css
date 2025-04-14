@@ -81,7 +81,7 @@ section {
 .header {
     position: relative;
     overflow: hidden;
-    height: calc(100vh - 69px);
+    height: 100vh;
 }
 .header-content {
     height: 100%;
@@ -133,13 +133,13 @@ section {
     border-radius: 4px;
 }
 .header-img {
-    height: calc(100vh - 69px);
+    height: 100vh;
     position: absolute;
     top: 0;
 }
 .header-img > img{
     width: 100%;
-    height: calc(100vh - 69px);
+    height: 100vh;
     opacity: 0.1;
     border-radius: 10px;
     transition: opacity 0.5s ease; 
