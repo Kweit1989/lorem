@@ -8,11 +8,18 @@ body {
     height: 3000px;
 }
 
+/* Header */
 header {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 10px 0;
+    position: sticky;
+    top: 0;
+    background: #222222;
+    z-index: 1000;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* чуть объёма */
 }
 
 .logo-company > img{
@@ -22,5 +29,29 @@ header {
 .menu-wrapper{
     display: flex;
     column-gap: 15px;
+    font-family: 'ArialMT', sans-serif;
+    font-style: italic;
     font-size: 14px;
+}
+
+/* Main */
+
+main {
+    padding: 0 10px;
+}
+
+section {
+    margin: 30px 0;
+}
+
+
+/* Section header */
+
+.header-title {
+    font-family: 'Prata', sans-serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.header-subtitle {
+    font-size: 18px;
 }
