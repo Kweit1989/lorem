@@ -81,6 +81,7 @@ section {
 .header {
     position: relative;
     overflow: hidden;
+    height: 100vh;
 }
 .header-content {
     display: grid;
@@ -135,6 +136,7 @@ section {
 }
 .header-img > img{
     width: 100%;
+    height: 100vh;
     opacity: 0.1;
     border-radius: 10px;
     transition: opacity 0.5s ease; 
