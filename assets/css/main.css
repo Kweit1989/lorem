@@ -31,12 +31,14 @@ header {
     column-gap: 15px;
     font-family: 'ArialMT', sans-serif;
     font-style: italic;
-    font-size: 14px;
+    font-size: 12px;
+    text-transform: uppercase;
 }
 
 /* Main */
 
 main {
+    height: 600px;
     padding: 0 10px;
 }
 
