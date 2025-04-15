@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const menuBg = document.querySelector('.menu-bg');
 
+  const bodyImgLeft = document.querySelector('.body-img-left')
+  const bodyImgRight = document.querySelector('.body-img-right')
+
   const socialLink = document.querySelectorAll('.footer-social > a');
 
   function setFullHeight() {
@@ -28,7 +31,12 @@ document.addEventListener('DOMContentLoaded', function() {
   let waveForward = true;
 
   setInterval(() => {
-    headerImg.style.opacity = isFaded ? '0.5' : '0.1';
+    const isWideScreen = window.innerWidth >= 1900;
+
+    // Меняем диапазон в зависимости от ширины экрана
+    headerImg.style.opacity = isFaded ? (isWideScreen ? '1' : '0.5') : '0.1';
+    bodyImgLeft.style.opacity = isFaded ? (isWideScreen ? '1' : '0.5') : '0.1';
+    bodyImgRight.style.opacity = isFaded ? (isWideScreen ? '1' : '0.5') : '0.1';
 
     menuItems.forEach(item => {
         item.classList.toggle('active', isFaded);
