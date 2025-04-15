@@ -27,6 +27,13 @@ body {
     letter-spacing: 0.04em;
 }
 
+@media screen and (min-width: 496px) { 
+    .btn { 
+        font-size: 18px;
+    }
+}
+
+
 
 /* Header */
 header {
@@ -102,8 +109,8 @@ header {
 }
 
 
-/* Main */
 
+/* Main */
 section {
     padding: 30px 0;
 }
@@ -112,6 +119,8 @@ section {
         padding: 45px 0;
     }
 }
+
+
 
 /* Section header */
 .header {
@@ -174,7 +183,6 @@ section {
     border-radius: 10px;
     transition: opacity 0.5s ease; 
 }
-
 @media screen and (min-width: 496px) {
     .header-title {
         font-size: 39px;
@@ -194,8 +202,10 @@ section {
         height: 45px;
     }
 }
-/* Section body */
 
+
+
+/* Section body */
 .body {
     background-color: #282829;
 }
@@ -223,8 +233,26 @@ section {
     width: 100%;
     height: 40px;
 }
-/* Section form */
+@media screen and (min-width: 496px) {
+    .body-item {
+        column-gap: 20px;
+        padding: 30px 0;
+    }
+    .body-svg {
+        width: 55px;
+        height: 45px;
+    }
+    .body-list {
+        font-size: 20px;
+    }
+    .body-btn {
+        height: 45px;
+    }
+}
 
+
+
+/* Section form */
 .form-container {
     padding-bottom: 0;
 }
@@ -269,6 +297,51 @@ section {
     color: #fff;
     border-radius: 4px;
 }
+.form-img {
+    display: none;
+}
+@media screen and (min-width: 496px) {
+    .form-container {
+        position: relative;
+        overflow: hidden;
+    }
+    .form {
+        padding: 35px 100px 35px 25px;
+    }
+    .form-submit {
+        width: 80%;
+        height: 45px;
+        font-size: 18px;
+        margin: 0 auto;
+    }
+    .form-title {
+        font-size: 30px;
+    }
+    .form-name, .form-email {
+        padding: 20px 30px;
+        font-size: 18px;
+    }
+    .form-label {
+        justify-content: center;
+        column-gap: 16px;
+        font-size: 18px;
+    }
+    .form-checkbox {
+        width: 16px;
+        height: 16px;
+    }
+    .form-img {
+        display: block;
+        position: absolute;
+        top: -30px;
+        right: -120px;
+    }
+    .form-img > img{
+        width: 400px;
+        height: 610px;
+    }
+}
+
 
 /* Footer */
 
@@ -278,6 +351,7 @@ section {
     align-items: center;
     font-size: 12px;
     font-style: italic;
+    text-transform: uppercase;
     column-gap: 15px;
     padding: 25px 0;
     border-bottom: 2px solid #D5C9BE;
@@ -298,8 +372,8 @@ section {
     font-size: 10px;
 }
 .footer-logo {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     margin: 0 auto;
 }
 .footer-text {
@@ -323,27 +397,36 @@ section {
 animation: socialJump 0.6s ease-in-out;
 }
 
-.footer-social > svg {
-    width: 28px;
-    height: 28px;
-}
 .footer-btn-wrapper {
     grid-column: 2;
     flex: 1;
     display: grid;
     justify-content: center;
-    align-items: end;
+    align-items: center;
     font-size: 10px;
 }
 .footer-btn {
     width: 70px;
     height: 30px; 
 }
-.footer-link-policy {
+.footer-link-policy, .footer-link-terms {
     text-align: center;
     color: #D5C9BE;
 }
-.footer-link-terms {
-    text-align: center;
-    color: #D5C9BE;
+
+@media screen and (min-width: 496px) { 
+    .menu-footer { 
+        font-size: 14px;
+    }
+    .footer-social > a > svg {
+        width: 40px;
+        height: 40px;
+    }
+    .footer-btn-wrapper {
+        font-size: 12px;
+    }
+    .footer-btn {
+        width: 115px;
+    }
 }
+
