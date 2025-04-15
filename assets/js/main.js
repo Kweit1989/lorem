@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const headerImg = document.getElementById('header-img');
   const menuItems = document.querySelectorAll('.menu-item');
 
+  const menuBg = document.querySelector('.menu-bg');
+
   const socialLink = document.querySelectorAll('.footer-social > a');
 
   function setFullHeight() {
@@ -45,4 +47,19 @@ document.addEventListener('DOMContentLoaded', function() {
     waveForward = !waveForward; // смена направления волны
     isFaded = !isFaded;
     }, 3000);
+
+
+
+    function updateMenuBg() {
+        if (window.scrollY > 0) {
+          menuBg.style.bottom = '0px';
+        } else {
+          menuBg.style.bottom = '84px';
+        }
+      }
+    
+      window.addEventListener('scroll', updateMenuBg);
+    
+      // Чтобы проверить состояние сразу при загрузке
+      updateMenuBg();
 });
