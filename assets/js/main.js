@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
             link.classList.remove('jump');
             void link.offsetWidth;
             link.classList.add('jump');
-        }, index * 150); // задержка между волнами
+        }, index * 150);
     });
 
     waveForward = !waveForward; // смена направления волны
