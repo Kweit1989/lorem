@@ -6,7 +6,6 @@ body {
     font-family: 'ArialMT', sans-serif;
     background-color: #222222;
     color: #fff;
-    height: 3000px;
 }
 
 /* Header */
@@ -259,11 +258,14 @@ section {
 .menu-item-f {
 }
 .footer-row {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    row-gap: 20px;
     padding: 20px 0;
 }
 .footer-coperate {
+    grid-column: 1;
     flex: 1;
     display: grid;
     font-size: 10px;
@@ -277,11 +279,22 @@ section {
     text-align: center;
 }
 
+.footer-social {
+    grid-column: 1 / -1;
+    order: -1; 
+    display: flex;
+    justify-content: space-between;
+}
+.footer-social > svg {
+    width: 28px;
+    height: 28px;
+}
 .footer-btn-wrapper {
+    grid-column: 2;
     flex: 1;
     display: grid;
     justify-content: center;
-    align-items: center;
+    align-items: end;
     font-size: 10px;
 }
 .footer-btn {
