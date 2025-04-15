@@ -4,7 +4,9 @@
 html{
     scroll-behavior: smooth;
 }
-
+html, body{ 
+    overflow-x: hidden;
+}
 body {
     font-family: 'ArialMT', sans-serif;
     background-color: #222222;
@@ -32,7 +34,14 @@ body {
         font-size: 18px;
     }
 }
-
+@media screen and (min-width: 890px) { 
+    .container {
+        padding: 0 50px;
+    }
+    .btn { 
+        font-size: 20px;
+    }
+}
 
 
 /* Header */
@@ -109,7 +118,6 @@ header {
 }
 
 
-
 /* Main */
 section {
     padding: 30px 0;
@@ -145,6 +153,7 @@ section {
 .header-title {
     font-family: 'Prata', sans-serif;
     font-size: 25px;
+    line-height: 120%;
 }
 .header-subtitle {
     font-size: 20px;
@@ -167,8 +176,8 @@ section {
     font-family: 'Prata', sans-serif;
 }
 .header-btn{
-    width: 120px;
-    height: 40px;
+    width: 100px;
+    height: 45px;
 }
 .header-img {
     height: calc(100vh - 69px);
@@ -199,8 +208,33 @@ section {
         height: 35px;
     }
     .header-btn {
-        width: 210px;
-        height: 45px;
+        width: 150px;
+        height: 60px;
+    }
+    .header-img > img{ 
+        border-radius: 0;
+    }
+}
+@media screen and (min-width: 890px) {
+    .header-title {
+        font-size: 60px;
+    }
+    .header-subtitle {
+        font-size: 40px;
+    }
+    .header-list {
+        font-size: 24px;
+    }
+    .header-svg {
+        width: 40px;
+        height: 40px;
+    }
+    .header-btn {
+        width: 170px;
+        height: 70px;
+    }
+    .header-img > img{ 
+        border-radius: 0;
     }
 }
 
@@ -234,6 +268,9 @@ section {
     width: 100%;
     height: 40px;
 }
+.body-img-left, .body-img-right{
+    display: none;
+}
 @media screen and (min-width: 496px) {
     .body-item {
         column-gap: 20px;
@@ -247,7 +284,48 @@ section {
         font-size: 20px;
     }
     .body-btn {
+        width: 290px;
         height: 45px;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 890px) { 
+    .body {
+        display: flex;
+        justify-content: center; 
+        align-items: stretch; 
+    }
+    .body-container {
+        flex-shrink: 0;
+        width: 670px;
+        padding: 0 10px;
+        height: auto;
+        display: grid;
+    }
+    .body-img-left,
+    .body-img-right {
+        display: block;
+        opacity: 0.3;
+    }
+    .body-img-left > img, 
+    .body-img-right > img {
+        width: 662px;
+        height: 100%;
+    }
+    .body-item {
+        padding: 40px 0;
+    }
+    .body-svg {
+        width: 60px;
+        height: 50px;
+    }
+    .body-list {
+        font-size: 24px;
+    }
+    .body-btn {
+        width: 400px;
+        height: 60px;
+        margin-top: auto;
     }
 }
 
@@ -283,6 +361,7 @@ section {
 .form-label {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     color: #55565A;
     margin: 15px 0;
 }
@@ -308,18 +387,12 @@ section {
     }
     .form {
         padding: 35px 100px 35px 25px;
-    }
-    .form-submit {
-        width: 80%;
-        height: 45px;
-        font-size: 18px;
-        margin: 0 auto;
-    }
+    } 
     .form-title {
         font-size: 30px;
     }
     .form-name, .form-email {
-        padding: 20px 30px;
+        padding: 15px 30px;
         font-size: 18px;
     }
     .form-label {
@@ -331,6 +404,12 @@ section {
         width: 16px;
         height: 16px;
     }
+    .form-submit {
+        width: 80%;
+        height: 45px;
+        font-size: 18px;
+        margin: 0 auto;
+    }
     .form-img {
         display: block;
         position: absolute;
@@ -340,6 +419,32 @@ section {
     .form-img > img{
         width: 400px;
         height: 610px;
+    }
+}
+@media screen and (min-width: 890px) { 
+    .form-title {
+        font-size: 40px;
+    }
+    .form-name, .form-email {
+        padding: 20px 30px;
+        font-size: 24px;
+    }
+    .form-label {
+        justify-content: flex-start;
+        font-size: 19px;
+    }
+    .form-checkbox {
+        width: 24px;
+        height: 24px;
+    }
+    .form-submit {
+        width: 100%;
+        height: 70px;
+        margin: 0;
+    }
+    .form-img > img {
+        width: 500px;
+        height: 700px;
     }
 }
 
@@ -423,16 +528,17 @@ animation: socialJump 0.6s ease-in-out;
         row-gap: 10px;
         font-size: 11px;
     }
-    .footer-social > a > svg {
-        width: 40px;
-        height: 40px;
-    }
     .footer-btn-wrapper {
         row-gap: 10px;
         font-size: 12px;
     }
     .footer-btn {
         width: 115px;
+    }
+}
+@media screen and (min-width: 890px) { 
+    .menu-footer { 
+        font-size: 20px;
     }
 }
 
