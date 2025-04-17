@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const menuItems = document.querySelectorAll('.menu-item');
+  const menuItems = document.querySelectorAll('.menu-item > a');
   const menuBg = document.querySelector('.menu-bg');
 
   const headerImg = document.querySelector('.header-img');
