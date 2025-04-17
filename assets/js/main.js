@@ -1,9 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const headerImg = document.getElementById('header-img');
   const menuItems = document.querySelectorAll('.menu-item');
-
   const menuBg = document.querySelector('.menu-bg');
 
+  const headerImg = document.querySelector('.header-img');
   const bodyImgLeft = document.querySelector('.body-img-left')
   const bodyImgRight = document.querySelector('.body-img-right')
 
