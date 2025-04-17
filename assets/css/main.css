@@ -78,7 +78,7 @@ header {
   bottom: 0;
   height: 1px;
   background-color: #fff;
-  transition: width 0.5s ease;
+  transition: width 0.5s ease, background-color 0.2s ease-in;
 }
 .menu-item > a::before {
   left: 0;
@@ -92,7 +92,6 @@ header {
 .menu-item > a.active::after {
   width: 50%;
 }
-
 
 
 
@@ -221,8 +220,8 @@ section {
     color: #38535D;
     margin-bottom: 30px;
 }
-.form-name {
-    margin-bottom: 15px;
+.form-wrapper > input + input {
+    margin-top: 15px;
 }
 .form-name, .form-email {
     width: 100%;
